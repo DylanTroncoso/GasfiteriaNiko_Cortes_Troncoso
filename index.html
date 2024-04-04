@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasfiteria Niko</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>  
+    <main>
+      <img id="image24hrs" src="IMG/24H.png" alt="">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+              <img id="Logo" src="IMG/logogasfiteriaelniko.png" width="100" height="80" alt="">
+            </a>
+            
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse" id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#bienvenidos">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servi">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#equipo">Equipos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactenos">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carousel1">Trabajos Realizados</a>
+                </li>                 
+              </ul>
+            </div>
+        </nav>
+        <div class="container">
+          <div id="bienvenidos">
+            <div id="texto-bienvenido">
+              <div>
+                <h1>Bienvenidos</h1>
+                <p>
+                  Atención en todo Santiago, excelente servicio al mejor precio.
+                  Nos caracterizamos por ser responsables, certeros y dinámicos en nuestros trabajos, dando siempre un excelente servicio y para lo cual contamos con las mejores herramientas y tecnología.
+                  Estamos a su disposición, llámenos!!
+                  Teléfonos: 956519278 - 952968501 - 722756847
+                </p>
+              </div>
+              <div id="boton-llamar">
+                <a id="boton-llamada" href="">
+                    <img src="IMG/phone.png" alt="">
+                    <h2>Llamar Ahora</h2>
+                  </ul>                  
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="servi">
+            <h2 class="borders">Servicios</h2>
+            <div id="servicios-column">
+              <div><img class="imagen-ajust" src="IMG/Emergencias.png" alt=""><h3>Emergencias</h3></div>
+              <div><img class="imagen-ajust" src="IMG/Reparaciones.png" alt=""><h3>Reparaciones</h3></div>
+              <div><img class="imagen-ajust" src="IMG/Destapespng.png" alt=""><h3>Destapes</h3></div>
+            </div>
+          </div>
+
+          <div id="equipo">
+            <h2 class="borders">Equipos</h2>
+            <div id="equipo-column">
+              <div><img class="imagen-ajuste" src="IMG/maquina1.png" alt=""></div>
+              <div><img class="imagen-ajuste" src="IMG/maquina2.png" alt=""></div>
+              <div><img class="imagen-ajuste" src="IMG/maquina3.png" alt=""></div>
+            </div>
+          </div>
+		
+          <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carousel1" data-bs-slide-to="2"></li>
+            </ol>
+            <!-- diapositivas -->
+            <div class="carrusel">
+              <div class="carousel-item active">
+                <div id="ImagenesLibro1"></div>
+                  <div class="carousel-caption">
+                    <h3 class="backgroundH3">Cambio de llave</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div id="ImagenesLibro2"></div>
+                  <div class="carousel-caption">
+                    <h3 class="backgroundH3">Construción y Remodelacion de baño</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div id="ImagenesLibro3"></div>
+                  <div class="carousel-caption">
+                    <h3 class="backgroundH3">Instalación de riego automaticos</h3>
+                  </div>
+              </div>
+            </div>
+            <!-- botones de desplazamiento a izquierda y derecha -->      
+            <a class="carousel-control-prev" href="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div id="contactenos">
+            <h2>Contactenos</h2>
+            <div class="inputs">
+               <label><input name="nombre" type="text" class="c_input" placeholder="Nombre"></label>
+               <label><input name="email" type="text" class="c_input" placeholder="Email"></label>
+               <label><input name="asunto" type="text" class="c_input" placeholder="Asunto"></label>
+               <label><input name="telefono" type="text" class="c_input" placeholder="Telefono"></label>
+               <label><input name="mensaje" type="text" id="mensaje" placeholder="Mensaje..."></label>
+               <input name="send" type="button" value="Enviar" id="c_enviar">
+            </div>
+          </div>
+
+          
+      </div>
+      <footer>
+        <h3>Encuentreme en...</h3>
+        <div id="encuentrame">
+          <div id="twitter">
+            <a href="https://twitter.com/GasfiteriaNiko">
+            <img src="IMG/twitter-negro.png" alt="" target="_blank">
+            </a>
+          </div>
+          <div id="facebook">
+            <a href="https://www.facebook.com/gasfiterianiko" target="_blank">
+            <img src="IMG/logo-face.png" alt="">
+            </a>
+          </div>
+        </div>
+        <p>info@gasfiterianiko.cl - Teléfonos: 956519278 - 952968501 - 722756847</p>
+        <p>© 2016 - Gasfitería Niko .</p>
+    </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>  
+</body>
+</html>
