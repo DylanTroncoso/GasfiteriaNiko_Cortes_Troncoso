@@ -1,0 +1,54 @@
+{
+    "productos":[
+        {
+            "id":"1",
+            "nombre":"Máquina de Destape",
+            "precio":"$725.990",
+            "desc": "Especial para trabajos de instalaciones sanitarias y de destape de todo tipo de cañerias con gran flexibilidad."
+        },
+        {
+            "id":"2",
+            "nombre":"PVC",
+            "precio":"$5.570",
+            "desc": "es un material muy valorado por los profesionales del sector de la construcción por ser un mal conductor."
+        },
+        {
+            "id":"3",
+            "nombre":"Tuberias de Cobre",
+            "precio":"$37.990",
+            "desc": "Son comúnmente utilizadas en instalaciones de agua, gas, vapor, lubricantes y otras aplicaciones industriales."
+        },
+        {
+            "id":"4",
+            "nombre":"Sifon",
+            "precio":"$6.990",
+            "desc": "Es un tipo de cierre hidráulico a modo de tubo, que se coloca entre los desagües de los inodoros, lava platos, etc."
+        },
+        {
+            "id":"5",
+            "nombre":"Calefont",
+            "precio":"$114.990",
+            "desc": "Es un artefacto que calienta el agua gracias a la energía liberada por la combustión de un gas, aumentando la temperatura de esta."
+        },
+        {
+            "id":"6",
+            "nombre":"Máquina Termofusora",
+            "precio":"$25.990",
+            "desc": "Sirven para soldar derivaciones, mango, tubos y piezas conformadas hasta un diámetro de 125 mm."
+        },
+        {
+            "id":"7",
+            "nombre":"Tuberia de PPR",
+            "precio":"$7.990",
+            "desc": "Es un polímero de plástico, que lo convierten en la mejor alternativa para la distribución y suministro de agua potable a presión."
+        },
+        {
+            "id":"8",
+            "nombre":"Flexibles",
+            "precio":"$8.990",
+            "desc": "permite generar acoples entre cilindros y distintos equipos, como por ejemplo: calefones, cocinas, anafes, entre otros."
+        }
+    ]
+
+
+}

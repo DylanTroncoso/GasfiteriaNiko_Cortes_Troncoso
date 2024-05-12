@@ -1,0 +1,137 @@
+body{
+    min-width: 300px;
+    background: url(../IMG/FondoNegroNeon.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+footer{
+    background-color: white;
+    margin-top: 50px;
+    padding: 2cqmax;
+    text-align: center;
+}
+
+#logo {
+    width: 70px;
+}
+
+#servi {
+    margin-top: 150px;
+}
+#logo-gasfiteria {
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+#tamaño-texto {
+    font-size: 30px;
+}
+
+.navbar a {
+    font-weight: 600;
+}
+
+.ordenar {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+#twitter {
+    background-color: aqua;
+    border-radius: 5px;
+    width: 30px;
+}
+
+#twitter img {
+    width: 30px;
+}
+
+#facebook {
+    background-color: rgb(31, 31, 255);
+    border-radius: 5px;
+    width: 30px;
+}
+
+#facebook img {
+    width: 30px;
+}
+
+
+
+#videoServi {
+    text-align: center;
+}
+
+#videoServi video {
+    width: 700px;
+}
+
+.cajas {
+    display: flex;
+    width: 650px;
+    height: 296px;
+    background: rgb(255, 255, 255);
+    margin: 10px auto;
+}
+
+.img-servi{
+    width: 325px;
+}
+
+.parrafos{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.tamaño-h3{
+    font-size: 25px;
+}
+
+#registrar {
+    margin-left: 5px;
+}
+
+
+@media(max-width: 767px) {
+    #servi {
+        margin-top: 100px;
+    }
+    .tamaño-bar {
+        font-size: 15px;
+    }
+    #logo {
+        width: 40px;
+    }
+    #videoServi video {
+        width: 280px;
+    }
+
+    .cajas {
+        display: flex;
+        width: 250px;
+        height: 91px;
+        background: rgb(255, 255, 255);
+        margin: 10px auto;
+    }
+
+    .parrafos{
+        padding: 0;
+        font-size: 6px;
+    }
+
+    .tamaño-h3{
+        font-size: 10px;
+    }
+
+    .botones a{
+        font-size: 5px;
+        width: 50px;
+        height: 20px;
+    }
+
+    .img-servi{
+        width: 100px;
+    }
+}

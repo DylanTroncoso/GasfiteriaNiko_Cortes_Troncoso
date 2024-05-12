@@ -1,0 +1,82 @@
+body{
+    min-width: 300px;
+    background: url(../IMG/FondoNegroNeon.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+
+#logo {
+    width: 70px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+label{
+    clear: both;
+    float: left;
+    width: 180px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.error-control{
+    border: 1px solid red;
+}
+
+label.error{
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.tamaño-bar {
+    font-size: 20px;
+}
+
+#tamaño-texto {
+    font-size: 30px;
+}
+
+.navbar a {
+    font-weight: 600;
+}
+
+#registrar {
+    margin-left: 5px;
+}
+
+.boton{
+    height: 39px;
+    border-radius: 5px;
+}
+
+.ordenar {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+#twitter {
+    background-color: aqua;
+    border-radius: 5px;
+    width: 30px;
+}
+
+#twitter img {
+    width: 30px;
+}
+
+#facebook {
+    background-color: rgb(31, 31, 255);
+    border-radius: 5px;
+    width: 30px;
+}
+
+#facebook img {
+    width: 30px;
+}

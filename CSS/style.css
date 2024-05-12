@@ -1,4 +1,5 @@
 body{
+    min-width: 300px;
     background: url(../IMG/FondoNegroNeon.jpg) no-repeat center fixed;
     background-size: cover;
 }
@@ -7,312 +8,260 @@ footer{
     background-color: white;
     margin-top: 50px;
     padding: 2cqmax;
-    height: 18cqmax;
     text-align: center;
 }
-footer h3{
-    font-size: 2cqmax;
+
+#logo {
+    width: 70px;
 }
 
-footer p{
-    font-size: 1cqmax;
+.form-control {
+    margin-bottom: 10px;
 }
 
-#encuentrame{
+label{
+    clear: both;
+    float: left;
+    width: 180px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.error-control{
+    border: 1px solid red;
+}
+
+label.error{
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.tamaño-bar {
+    font-size: 20px;
+}
+
+#tamaño-texto {
+    font-size: 30px;
+}
+
+.navbar a {
+    font-weight: 600;
+}
+
+#registrar {
+    margin-left: 5px;
+}
+
+.carousel-item {
+    min-height: 400px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.ordenar {
     display: flex;
     justify-content: center;
-    gap: 1cqmax;
-}
-
-#twitter{
-    padding: 0.5cqmax;
-    background-color: rgb(0, 247, 255);
-    width: 4%;
-    height: 4%;
-    border-radius: 10px;
-}
-
-#twitter:hover{
-    background-color: rgb(0, 186, 192);
-}
-
-#twitter img{
-    width: 100%;
-}
-
-#facebook{
-    padding: 0.5cqmax;
-    background-color: rgb(21, 89, 235);
-    width: 4%;
-    height: 4%;
-    border-radius: 10px;
-}
-
-#facebook:hover{
-    background-color: rgb(16, 65, 170);
-}
-
-#facebook img{
-    width: 90%;
-}
-
-#Logo{
-    margin-left: 40px;
-}
-
-.navbar-nav{
-    margin: auto;
-}
-
-.nav-item{
-    margin-left: 30px;
-}
-
-.navbar-toggler{
-    margin-left: 30px;
-}
-
-#image24hrs{
-    width: 12.5cqmax;
-    position: fixed;
-    margin-top: 120px;
-}
-
-#bienvenidos{
-    display: flex;
-    margin-top: 50px;
-    background: url(../IMG/Vitrina_Centro_santiago-1.jpg) no-repeat center;
-    background-size: cover;
-    width: auto;
-    height: 50cqmax;
-    justify-content: center;
-}
-
-
-#texto-bienvenido{
-    margin-top: 30px;
-    display: inline-block;
-    padding: 10px;
-    width: 80%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.233);
-    border-radius: 50px;
-}
-
-#texto-bienvenido h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4cqmax;
-    color: white;
-}
-
-#texto-bienvenido p{
-    margin-top: 25px;
-    text-align: center;
-    color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2cqmax;
-    font-style: oblique;
-    font-stretch: narrower;
-}
-
-#boton-llamar{
-    margin: 4cqmax auto;
-    background-color: rgb(0, 132, 255);
-    width: 20cqmax;
-    height: 5cqmax;
-    border-radius: 50px;
-    padding: 5px;
-}
-
-#boton-llamar:hover{
-    background-color: rgb(3, 106, 202);
-}
-#boton-llamada {
-    display: flex;
-    text-decoration: none;
     gap: 5px;
+}
+
+#twitter {
+    background-color: aqua;
+    border-radius: 5px;
+    width: 30px;
+}
+
+#twitter img {
+    width: 30px;
+}
+
+#facebook {
+    background-color: rgb(31, 31, 255);
+    border-radius: 5px;
+    width: 30px;
+}
+
+#facebook img {
+    width: 30px;
+}
+
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-#boton-llamada h2{
-    color: white;
-    margin: auto;
-    font-size: 1.6cqmax;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+.services {
+    padding: 80px 0;
 }
 
-#boton-llamada img{
-    width: 4cqmax;
-    height: 4cqmax;
-    margin: auto;
-}
-
-#servi{
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-
-}
-
-#equipo{
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-
-}
-
-.borders{
-    margin: auto;
-    width: 20%;
-    height: 5%;
-    border: solid;
-    border-color: turquoise;
-    font-size: 2cqmax;
-    
-}
-
-#servicios-column{
-    margin-top: 50px;
-    display: flex;
-    width: auto;
-    height: 30cqmax;
-}
-
-#servicios-column div{
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.733);
-    border-radius: 20px;
-    width: 30%;
-    height: 100%;
-}
-
-#servicios-column div h3{
-    font-size: 2cqmax;
-    color: black;
-}
-
-#equipo-column{
-    margin-top: 50px;
-    display: flex;
-    width: auto;
-    height: 20cqmax;
-}
-
-#equipo-column div{
-    margin: auto;
-    width: 30%;
-    height: 100%;
-    border: groove;
-}
-
-#equipo-column div h3{
-    font-size: 2cqmax;
-    color: black;
-}
-
-.imagen-ajust{
-    width: 90%;
-}
-
-.imagen-ajuste{
-    width: 90%;
-    margin-top: 1cqmax;
-}
-
-#carousel1{
-    margin-top: 50px;
-    justify-content: center;
-}
-
-#ImagenesLibro1{
-    background: url(../IMG/image1.jpeg) no-repeat center;
+.bg-car1 {
+    background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url(../IMG/Destapespng.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 50cqmax;
-    height: 25cqmax; 
-    margin-left: 22.5%;
-
+    height: 250px;
 }
 
-#ImagenesLibro2{
-    background: url(../IMG/image2.jpeg) no-repeat center;
+.bg-car1:hover {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(../IMG/Destapespng.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 50cqmax;
-    height: 25cqmax; 
-    margin-left: 22.5%;
-
+    height: 250px;
 }
 
-#ImagenesLibro3{
-    background: url(../IMG/image3.jpeg) no-repeat center;
+.bg-car2 {
+    background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url(../IMG/Reparaciones.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 50cqmax;
-    height: 25cqmax; 
-    margin-left: 22.5%;
-
+    height: 250px;
 }
 
-.carrusel{
-    width: auto;
-    height: 30cqmax;
+.bg-car2:hover {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(../IMG/Reparaciones.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 }
 
-.backgroundH3 {
-    margin-left: 10.7%;
-    background-color: rgba(0, 0, 0, 0.507);
-    width: 50cqmax;
-    font-size: 3cqmax;
+.bg-car3 {
+    background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url(../IMG/Emergencias.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 }
 
-#contactenos {
-    width: auto;
-    height: 54cqmax;
-    background-color: rgba(0, 0, 0, 0.795);
-    border: groove;
-    border-radius: 20px;
-    text-align: center;
+.bg-car3:hover {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(../IMG/Emergencias.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 }
 
-#contactenos h2{
-    font-size: 4cqmax;
-    margin-top: 2cqmax;
-    color: white;
-
+.card img {
+    width: 150px;
+    height: 150px;
 }
 
-.inputs{
-    margin-top: 2cqmax;
-    width: 100%;
-    display: block;
-    justify-content: center;
+.banner {
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background-color: #eae5df;
+}
+
+.banner h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.banner img {
+    width: 300px;
+}
+
+.ajuste-imagen img{
+    width: 600px;
+}
+
+@media(max-width: 767px) {
+
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        font-size: 16px;
+    }
     
-    
-}
+    .carousel-caption button {
+        font-size: 10px;
+    }
 
-.c_input{
-    padding: 0.75em;
-    font-size: 2cqmax;
-    width: 30cqmax;
-    height: 5cqmax;
-    margin-top: 2cqmax;
-}
+    .services {
+        padding: 30px 0;
+    }
 
-#mensaje{
-    font-size: 2cqmax;
-    margin-top: 2cqmax;
-    width: 60.5cqmax;
-    height: 15cqmax;
-    padding: 0.75em;
-}
+    .productos {
+        padding: 30px 0 0 0;
+    }
+    .div-herram h2{
+        font-size: 25px;
+    }
 
-#c_enviar{
-    margin-top: 2cqmax;
-    width: 60.5cqmax;
-    height: 4cqmax;
-    font-size: 1.5cqmax;
-}
+    .ajuste-imagen img{
+        width: 200px;
+    }
 
+    .tamaño-bar {
+        font-size: 15px;
+    }
+
+    #logo {
+        width: 40px;
+    }
+
+    .cartas p{
+        font-size: 14px;
+    }
+}

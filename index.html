@@ -1,156 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gasfiteria Niko</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gasfiteria Niko</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="shortcut icon" href="IMG/logoPag.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- https://jqueryvalidation.org/ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="JS/inicio.js"></script>
 </head>
 
-<body>  
-    <main>
-      <img id="image24hrs" src="IMG/24H.png" alt="">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- logo -->
-            <a class="navbar-brand" href="#">
-              <img id="Logo" src="IMG/logogasfiteriaelniko.png" width="100" height="80" alt="">
-            </a>
-            
-            <!-- enlaces -->
-            <div class="collapse navbar-collapse" id="opciones">   
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#bienvenidos">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#servi">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#equipo">Equipos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contactenos">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#carousel1">Trabajos Realizados</a>
-                </li>                 
-              </ul>
-            </div>
-        </nav>
-        <div class="container">
-          <div id="bienvenidos">
-            <div id="texto-bienvenido">
-              <div>
-                <h1>Bienvenidos</h1>
-                <p>
-                  Atención en todo Santiago, excelente servicio al mejor precio.
-                  Nos caracterizamos por ser responsables, certeros y dinámicos en nuestros trabajos, dando siempre un excelente servicio y para lo cual contamos con las mejores herramientas y tecnología.
-                  Estamos a su disposición, llámenos!!
-                  Teléfonos: 956519278 - 952968501 - 722756847
-                </p>
-              </div>
-              <div id="boton-llamar">
-                <a id="boton-llamada" href="">
-                    <img src="IMG/phone.png" alt="">
-                    <h2>Llamar Ahora</h2>
-                  </ul>                  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div id="servi">
-            <h2 class="borders">Servicios</h2>
-            <div id="servicios-column">
-              <div><img class="imagen-ajust" src="IMG/Emergencias.png" alt=""><h3>Emergencias</h3></div>
-              <div><img class="imagen-ajust" src="IMG/Reparaciones.png" alt=""><h3>Reparaciones</h3></div>
-              <div><img class="imagen-ajust" src="IMG/Destapespng.png" alt=""><h3>Destapes</h3></div>
-            </div>
-          </div>
+<body>
 
-          <div id="equipo">
-            <h2 class="borders">Equipos</h2>
-            <div id="equipo-column">
-              <div><img class="imagen-ajuste" src="IMG/maquina1.png" alt=""></div>
-              <div><img class="imagen-ajuste" src="IMG/maquina2.png" alt=""></div>
-              <div><img class="imagen-ajuste" src="IMG/maquina3.png" alt=""></div>
-            </div>
-          </div>
-		
-          <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
-              <li data-bs-target="#carousel1" data-bs-slide-to="2"></li>
-            </ol>
-            <!-- diapositivas -->
-            <div class="carrusel">
-              <div class="carousel-item active">
-                <div id="ImagenesLibro1"></div>
-                  <div class="carousel-caption">
-                    <h3 class="backgroundH3">Cambio de llave</h3>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div id="ImagenesLibro2"></div>
-                  <div class="carousel-caption">
-                    <h3 class="backgroundH3">Construción y Remodelacion de baño</h3>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div id="ImagenesLibro3"></div>
-                  <div class="carousel-caption">
-                    <h3 class="backgroundH3">Instalación de riego automaticos</h3>
-                  </div>
-              </div>
-            </div>
-            <!-- botones de desplazamiento a izquierda y derecha -->      
-            <a class="carousel-control-prev" href="#carousel1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel1" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <div id="contactenos">
-            <h2>Contactenos</h2>
-            <div class="inputs">
-               <label><input name="nombre" type="text" class="c_input" placeholder="Nombre"></label>
-               <label><input name="email" type="text" class="c_input" placeholder="Email"></label>
-               <label><input name="asunto" type="text" class="c_input" placeholder="Asunto"></label>
-               <label><input name="telefono" type="text" class="c_input" placeholder="Telefono"></label>
-               <label><input name="mensaje" type="text" id="mensaje" placeholder="Mensaje..."></label>
-               <input name="send" type="button" value="Enviar" id="c_enviar">
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand"><img id="logo" src="IMG/logogasfiteriaelniko.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+        aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          
+      <div class="collapse navbar-collapse" id="navbar-start">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="PAGS/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="PAGS/product.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="PAGS/ApiProductos.html">API Productos</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="PAGS/ApiPersonal.html">API Personal</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="#contactos">Contactenos</a></li>
+
+        </ul>
+
       </div>
-      <footer>
-        <h3>Encuentreme en...</h3>
-        <div id="encuentrame">
+      
+      <div class="collapse navbar-collapse" id="navbar-start">
+        <ul class="navbar-nav ms-auto">
+          <a class="btn btn-primary" id="iniciar" href="PAGS/login.html">Iniciar Sesion</a>
+          <a class="btn btn-secondary" id="registrar" href="PAGS/register.html">Registrarse</a>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <section id="inicio"></section>
+  <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-idicators">
+      <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="1" aria-current="true"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="2" aria-current="true"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="IMG/Santiago1.jpg" class="d-block w-100" alt="" height="800px">
+        <div class="carousel-caption">
+          <h5>Bienvenidos</h5>
+          <p>
+            Atención en todo Santiago, excelente servicio al mejor precio.
+            Nos caracterizamos por ser responsables, certeros y dinámicos en nuestros trabajos, dando siempre un
+            excelente servicio y para lo cual contamos con las mejores herramientas y tecnología.
+            Estamos a su disposición, llámenos!!
+          </p>
+          <button class="btn btn-primary btn-lg btn-block mt-3" type="button">Llamar</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMG/Santiago2.jpg" class="d-block w-100" alt="" height="800px">
+        <div class="carousel-caption">
+          <h5>Bienvenidos</h5>
+          <p>
+            Atención en todo Santiago, excelente servicio al mejor precio.
+            Nos caracterizamos por ser responsables, certeros y dinámicos en nuestros trabajos, dando siempre un
+            excelente servicio y para lo cual contamos con las mejores herramientas y tecnología.
+            Estamos a su disposición, llámenos!!
+          </p>
+          <button class="btn btn-primary btn-lg btn-block mt-3" type="button">Llamar</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMG/Santiago3.jpg" class="d-block w-100" alt="" height="800px">
+        <div class="carousel-caption">
+          <h5>Bienvenidos</h5>
+          <p>
+            Atención en todo Santiago, excelente servicio al mejor precio.
+            Nos caracterizamos por ser responsables, certeros y dinámicos en nuestros trabajos, dando siempre un
+            excelente servicio y para lo cual contamos con las mejores herramientas y tecnología.
+            Estamos a su disposición, llámenos!!
+          </p>
+          <a href="tel:962374140"><button class="btn btn-primary btn-lg btn-block mt-3"
+              type="button">Llamar</button></a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <section id="servicios" class="services">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="secction-header text-center pb-5">
+            <h2 class="text-white">Servicios</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-md-12 col-lg-4 mb-3">
+          <div class="card text-white text-center bg-car1 pb-2">
+            <div class="card-body cartas">
+              <h3 class="card-title">Destapes</h3>
+              <p>Destapes en redes de desagües, cámaras de alcantarillado y artefactos sanitarios. Se emplean
+                maquinarias de resortes, equipos de presión de aire, sistemas hidrojet y cámaras de videoinspeccion.
+
+                Emegercias y servicios preventivos.</p>
+              <a href="PAGS/servicios.html" class="btn btn-primary">Saber mas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 mb-3">
+          <div class="card text-white text-center bg-car2 pb-2">
+            <div class="card-body cartas">
+              <h3 class="card-title">Reparaciones</h3>
+              <p>
+                Reparamos todo tipo de fugas y filtraciones en artefactos o cañerias. Aún cuando no estan visibles las
+                detectamos con equipos de medición y detección, empleamos para ello:
+
+                - Ultrasonido.
+                - Gas Trazador.
+                - Cámaras Termograficas.</p>
+              <a href="PAGS/servicios.html" class="btn btn-primary">Saber mas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 mb-3">
+          <div class="card text-white text-center bg-car3 pb-2">
+            <div class="card-body cartas">
+              <h3 class="card-title">Emergencias</h3>
+              <p>Instalaciones de artefactos, redes de suministro y descarga sanitaria, ampliaciones y reparaciones en
+                materia de agua potable, desagues y gas.
+
+                Se trabaja en los siguientes compuestos: Cobre, PPR, HDPE, PVC Sanitario y PVC Hidraulico.</p>
+              <a href="PAGS/servicios.html" class="btn btn-primary">Saber mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="producto" class="productos">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="secction-header text-center pb-5">
+            <h2 class="text-white">Productos</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-md-12 col-lg-3">
+          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+            <div class="text-center">
+              <img src="IMG/maquina3.png" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Maquina de Destape</h5>
+              <p>Especial para trabajos de instalaciones sanitarias y de destape de todo tipo de cañerias con gran
+                flexibilidad.</p>
+              <a href="PAGS/product.html" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-3">
+          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+            <div class="text-center">
+              <img src="IMG/PVC.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">El PVC</h5>
+              <p>es un material muy valorado por los profesionales del sector de la construcción por ser un mal
+                conductor. </p>
+              <a href="PAGS/product.html" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-3">
+          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+            <div class="text-center">
+              <img src="IMG/CañeCobre.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tuberias de Cobre</h5>
+              <p>Son comúnmente utilizadas en instalaciones de agua, gas, vapor, lubricantes y otras aplicaciones
+                industriales. </p>
+              <a href="PAGS/product.html" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-3">
+          <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+            <div class="text-center">
+              <img src="IMG/Sifon.webp" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sifon</h5>
+              <p>Es un tipo de cierre hidráulico a modo de tubo, que se coloca entre los desagües de los inodoros, lava
+                platos, etc. </p>
+              <a href="PAGS/product.html" class="btn btn-primary">Ver mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="banner">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center div-herram">
+          <h2>Las mejores herramientas</h2>
+          <p>En un mundo donde la eficiencia y la productividad son claves para el éxito, contar con las herramientas
+            adecuadas es fundamental. Ya sea en el ámbito laboral, académico o personal, elegir las herramientas
+            correctas puede marcar la diferencia entre el éxito y el estancamiento. Para tu conveniencia contamos con
+            las mejores herramientas en nuestra area.</p>
+          <div class="ajuste-imagen">
+            <img src="IMG/Herramientas.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactos" class="contacto">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="secction-header text-center pb-2 pb-lg-5">
+            <h2 class="text-white">Contacto</h2>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6 pt-4 pb-4">
+          <form id="mis-datos" action="#" method="post" class="bg-light p-4 m-auto shadow-sm">
+            <input name="nom" class="form-control" placeholder="Nombre" type="text" minlength="3" required>
+            
+            <input name="email" class="form-control" placeholder="Email" type="email" required>
+
+            <input name="asunto" class="form-control" placeholder="Asunto" type="text" required>
+
+            <textarea name="mensaje" minlength="15" class="form-control" placeholder="Mensaje..." rows="5" required></textarea>
+
+            <button class="btn btn-primary form-control">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-white p-2 text-center">
+    <div class="container">
+      <div id="encuentrame">
+        <h3>Encuentreme en...</h3><hr>
+        <div class="ordenar">
           <div id="twitter">
-            <a href="https://twitter.com/GasfiteriaNiko">
-            <img src="IMG/twitter-negro.png" alt="" target="_blank">
+            <a href="https://twitter.com/GasfiteriaNiko" target="_blank">
+              <img src="IMG/twitter-negro.png" alt="">
             </a>
           </div>
           <div id="facebook">
             <a href="https://www.facebook.com/gasfiterianiko" target="_blank">
-            <img src="IMG/logo-face.png" alt="">
+              <img src="IMG/logo-face.png" alt="">
             </a>
           </div>
         </div>
-        <p>info@gasfiterianiko.cl - Teléfonos: 956519278 - 952968501 - 722756847</p>
-        <p>© 2016 - Gasfitería Niko .</p>
-    </footer>
-
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>  
+      </div>
+      <p>info@gasfiterianiko.cl - Teléfonos: 956519278 - 952968501 - 722756847</p>
+      <p>© 2016 - Gasfitería Niko .</p>
+      <hr>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

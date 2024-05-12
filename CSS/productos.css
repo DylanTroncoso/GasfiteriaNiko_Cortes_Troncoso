@@ -1,0 +1,144 @@
+body{
+    min-width: 300px;
+    background: url(../IMG/FondoNegroNeon.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+footer{
+    background-color: white;
+    margin-top: 50px;
+    padding: 2cqmax;
+    text-align: center;
+}
+
+
+#producto {
+    margin-top: 50px;
+}
+
+#registrar {
+    margin-left: 5px;
+}
+
+#logo {
+    width: 70px;
+}
+
+#logo-gasfiteria {
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+#tamaño-texto {
+    font-size: 30px;
+}
+
+.navbar a {
+    font-weight: 600;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.ordenar {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+#twitter {
+    background-color: aqua;
+    border-radius: 5px;
+    width: 30px;
+}
+
+#twitter img {
+    width: 30px;
+}
+
+#facebook {
+    background-color: rgb(31, 31, 255);
+    border-radius: 5px;
+    width: 30px;
+}
+
+#facebook img {
+    width: 30px;
+}
+
+
+.img-garantia img{
+    width: 400px;
+}
+
+.carta {
+    width: 100%;
+    display: flex;
+}
+
+.garantia {
+    display: flex;
+}
+
+.garantia p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#img-garantia {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -30px;
+    width: 100px;
+}
+
+#texto-garantia{
+    border: solid;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+    background-color: rgb(54, 54, 54);
+}
+
+@media(max-width: 767px) {
+     
+    .tamaño-bar {
+        font-size: 15px;
+    }
+    #logo {
+        width: 40px;
+    }
+    .img-garantia{
+        text-align: center;
+    }
+
+    .img-garantia img{
+        width: 200px;
+    }
+    #texto-garantia{
+        border: solid;
+        border-radius: 10px;
+        color: white;
+        padding: 5px;
+        background-color: rgb(54, 54, 54);
+    }
+
+    .garantia{
+        display: block;
+        text-align: left;
+    }
+
+    #img-garantia {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 0px;
+        width: 40px;
+    }
+
+    .garantia p{
+        margin-top: 10px;
+        font-size: 8px;
+    }
+}

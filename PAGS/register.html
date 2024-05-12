@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar</title>
+  <link rel="stylesheet" href="../CSS/register.css">
+  <link rel="shortcut icon" href="../IMG/logoPag.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="../JS/funcionRegister.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand"><img id="logo" src="../IMG/logogasfiteriaelniko.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+        aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-start">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="../PAGS/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="../PAGS/product.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="../PAGS/ApiProductos.html">API Productos</a></li>
+          <li class="nav-item"><a class="nav-link tamaño-bar" href="../index.html#contactos">Contactenos</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-start">
+        <ul class="navbar-nav ms-auto">
+          <a class="btn btn-primary" id="iniciar" href="../PAGS/login.html">Iniciar Sesion</a>
+          <a class="btn btn-secondary" id="registrar" href="../PAGS/register.html">Registrarse</a>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="container">
+    <section id="contactos" class="contacto">
+      <div class="container mb-3 mb-lg-5">
+        <div class="row">
+
+          <div class="col-md-12 mt-5">
+            <div class="secction-header text-center pb-2 pb-lg-5">
+              <h2 class="text-white">Registrarse</h2>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="col-12 col-md-12 col-lg-6 pt-4 pb-4">
+            <form id="mis-datos" action="#" method="post" name="mis-datos" class="bg-light p-4 m-auto shadow-sm">
+              <label for="nom">Nombre (*): </label>
+              <input name="nom" minlength="3" class="form-control" placeholder="Nombre" type="text" required>
+              <label for="apellido">Apellido (*): </label>
+              <input name="apellido" minlength="3" class="form-control" placeholder="Apellido" type="text" required>
+              <label for="email">Email (*): </label>
+              <input name="email" class="form-control" placeholder="Email" type="text" required>
+              <label for="email">Numero celular (*): </label>
+              <input name="fono" class="form-control" minlength="9" placeholder="Ingrese su numero celular"
+                type="number" required>
+              <label for="fecha">Fecha de nacimiento:</label>
+              <input name="fecha" type="date" min="1948-01-01" class="form-control">
+              <label for="nom">Contraseña (*): </label>
+
+              <input name="pass1" id="pass1" class="form-control" minlength="8" placeholder="Contraseña.." type="password"
+                required>
+              <input id="boton1" type="button" onclick="mostrarPass1()" class="boton btn" value="Mostrar Contraseña"><br>
+
+
+              <label for="nom">Repetir Contraseña (*): </label>
+              <input name="pass2" id="pass2" class="form-control" minlength="8" placeholder="Reingresar contraseña.."
+                type="password" required>
+              <input id="boton2" type="button" onclick="mostrarPass2()" class="boton btn" value="Mostrar Contraseña">
+
+              <div class="text-center">
+                <button class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+  <footer class="bg-white p-2 text-center">
+    <div class="container">
+      <div id="encuentrame">
+        <h3>Encuentreme en...</h3>
+        <hr>
+        <div class="ordenar">
+          <div id="twitter">
+            <a href="https://twitter.com/GasfiteriaNiko" target="_blank">
+              <img src="../IMG/twitter-negro.png" alt="">
+            </a>
+          </div>
+          <div id="facebook">
+            <a href="https://www.facebook.com/gasfiterianiko" target="_blank">
+              <img src="../IMG/logo-face.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <p>info@gasfiterianiko.cl - Teléfonos: 956519278 - 952968501 - 722756847</p>
+      <p>© 2016 - Gasfitería Niko .</p>
+      <hr>
+    </div>
+  </footer>
+
+</body>
+
+</html>
