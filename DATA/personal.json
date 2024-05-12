@@ -1,0 +1,54 @@
+{
+    "personal": [
+        {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "edad": 30,
+        "anosServicio": 5,
+        "cargo": "Jefe de Proyecto"
+        },
+        {
+        "nombre": "Pedro",
+        "apellido": "Gomez",
+        "edad": 25,
+        "anosServicio": 3,
+        "cargo": "Analista"
+        },
+        {
+        "nombre": "Maria",
+        "apellido": "Gonzalez",
+        "edad": 35,
+        "anosServicio": 7,
+        "cargo": "Desarrollador"
+        },
+        {
+        "nombre": "Ana",
+        "apellido": "Lopez",
+        "edad": 40,
+        "anosServicio": 10,
+        "cargo": "Tester"
+        },
+        {
+        "nombre": "Luis",
+        "apellido": "Rodriguez",
+        "edad": 45,
+        "anosServicio": 15,
+        "cargo": "Jefe de Proyecto"
+        },
+        {
+        "nombre": "Carlos",
+        "apellido": "Martinez",
+        "edad": 50,
+        "anosServicio": 20,
+        "cargo": "Analista"
+        },
+        {
+        "nombre": "Sofia",
+        "apellido": "Paz",
+        "edad": 55,
+        "anosServicio": 25,
+        "cargo": "Desarrollador"
+        }
+    ]
+
+}
